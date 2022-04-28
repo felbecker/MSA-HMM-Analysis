@@ -1,7 +1,4 @@
-.ipynb_checkpoints
 __pycache__
-balifam100
-balifam1000
-balifam10000
-homfam
-large
+.ipynb_checkpoints
+*.ref
+*.fasta
