@@ -1,0 +1,5 @@
+commit f9a3676425f28dc3b2c4b8d818d0ca49acd2cc06
+Author: Vlad <vlasmirnov@gmail.com>
+Date:   Fri Jan 21 15:10:08 2022 +0000
+
+    Create LICENSE.txt
