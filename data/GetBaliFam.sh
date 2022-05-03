@@ -18,4 +18,17 @@ do
 	chmod -w $file.ref
     done
 done
+#make fragmentary version of balifam10000
+mkdir balifrag
+mkdir balifrag/train
+mkdir balifrag/refs
+for file in balifam10000/train/*
+do
+    filename=$(basename "$file")
+    target_file=balifrag/train/${filename%.10000.fasta}.frag.fasta
+    target_ref_file=balifrag/refs/${filename%.10000.fasta}.frag.ref
+    python3 ../src/MakeFragmentary.py $file balifam10000/refs/${filename%.fasta}.ref $target_file $target_ref_file
+    chmod -w $target_file
+    chmod -w $target_ref_file
+done
 rm -rf balifam
