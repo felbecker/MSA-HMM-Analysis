@@ -18,6 +18,6 @@ do
     mv $file $fasta_file
     chmod +w $fasta_file
     filename=$(basename "$fasta_file")
-    python3 ../src/RemoveGapsAndMerge.py $fasta_file refs/${filename%.fasta}.ref
+    python3 ../../src/RemoveGapsAndMerge.py $fasta_file refs/${filename%.fasta}.ref
     chmod -w $fasta_file
 done
