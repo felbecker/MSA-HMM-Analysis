@@ -1,8 +1,8 @@
 import sys
 import os
 import numpy as np
-sys.path.insert(0, '../../MSA-HMM')
-from msa_hmm import fasta
+sys.path.insert(0, '../../MSA-HMM/msa_hmm')
+import Fasta as fasta
 
 #given a fasta file, creates a fragmentary version by drawing random sequences and random fragment lengths
 
