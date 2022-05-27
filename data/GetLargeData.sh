@@ -27,8 +27,9 @@ do
     cp Pfam-A.seed_data/${id}.fasta refs/${id}.ref
     chmod -w  refs/${id}.ref
     touch train/${id}.fasta
-    python3 ../src/RemoveGapsAndMerge.py train/${id}.fasta refs/${id}.ref
-    python3 ../src/RemoveGapsAndMerge.py train/${id}.fasta Pfam-A.full.uniprot_data/${id}.fasta
+    python3 ../../src/RemoveGapsAndMerge.py train/${id}.fasta refs/${id}.ref
+    python3 ../../src/RemoveGapsAndMerge.py train/${id}.fasta Pfam-A.full.uniprot_data/${id}.fasta
+    echo -en "\n" >> train/${id}.fasta
     chmod -w train/${id}.fasta
 done
 

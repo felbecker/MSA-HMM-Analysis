@@ -23,9 +23,10 @@ train_dict = make_dict(train_file)
 for seq_id, seqs in ref_dict.items():
     if seq_id not in train_dict:
         train_file.write(seq_id)
+        seq = ""
         for s in seqs:
-            train_file.write(s.replace("-", "").replace(".", ""))
-
+            seq += s.strip().replace("-", "").replace(".", "").upper()
+        train_file.write(seq+"\n")
 
 ref_file.close()
 train_file.close()
