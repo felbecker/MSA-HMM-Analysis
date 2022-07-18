@@ -21,7 +21,7 @@ get_fasta_data "Pfam-A.full.uniprot"
 get_fasta_data "Pfam-A.seed"
 mkdir train
 mkdir refs
-large_ids=("PF00096.29" "PF00400.35" "PF00005.30" "PF00069.28" "PF12796.10")
+large_ids=("PF00096.29" "PF00400.35" "PF00005.30" "PF00069.28" "PF12796.10" "PF00041.24" "PF00072.27" "PF07679.19" "PF07690.19" "PF13855.9")
 for id in ${large_ids[@]};
 do
     cp Pfam-A.seed_data/${id}.fasta refs/${id}.ref
