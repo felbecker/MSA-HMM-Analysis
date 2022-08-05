@@ -25,9 +25,8 @@ for seq_id, seqs in ref_dict.items():
         train_file.write(seq_id)
         seq = ""
         for s in seqs:
-            seq += s.strip().replace("-", "").replace(".", "")
+            seq += s.strip().replace("-", "").replace(".", "").upper()
         train_file.write(seq+"\n")
-
 
 ref_file.close()
 train_file.close()
