@@ -12,8 +12,8 @@ out_file = sys.argv[3]
 out_ref_file = sys.argv[4]
 
 # fragmentary parameters
-mean_len_percentage = 0.25
-fragmentary_seqs = 0.5
+mean_len_percentage = 0.33
+fragmentary_seqs = 0.4
 fragment_length_deviation = 15
 
 
