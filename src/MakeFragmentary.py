@@ -1,7 +1,7 @@
 import sys
 import os
 import numpy as np
-sys.path.insert(0, '../../MSA-HMM/msa_hmm')
+sys.path.insert(0, '../../MSA-HMM/learnMSA/msa_hmm')
 import Fasta as fasta
 
 #given a fasta file, creates a fragmentary version by drawing random sequences and random fragment lengths
@@ -17,8 +17,8 @@ fragmentary_seqs = 0.4
 fragment_length_deviation = 15
 
 
-fasta_file = fasta.Fasta(file, gaps=False, contains_lower_case=True)
-ref_fasta = fasta.Fasta(ref_file, gaps=True, contains_lower_case=True)
+fasta_file = fasta.Fasta(file)
+ref_fasta = fasta.Fasta(ref_file)
 mean_fragment_len = np.mean(fasta_file.seq_lens) * mean_len_percentage
 n_frag = int(fasta_file.num_seq * fragmentary_seqs)
 lens = np.copy(fasta_file.seq_lens)
