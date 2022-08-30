@@ -1,9 +1,9 @@
 #!/bin/bash
-#full pfam uniprot is downloaded!
-#allow 2TB of free disk space and quite some time
-#afterwards, most of it can be freed as we select only as small subset of the families
-#cautiously, this script does no remove anything on its own
-#
+#You may want to visit the Pfam website and manually the data from families you are interested in.
+#Full pfam uniprot is downloaded by this script!
+#Allow 2TB of free disk space and quite some time.
+#Afterwards, most of it can be freed as we select only as small subset of the families.
+#This script does no remove anything on its own.
 mkdir large
 cd large
 get_fasta_data() {
