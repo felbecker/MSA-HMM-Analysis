@@ -1,0 +1,50 @@
+PF00005,learnMSA,74.9,22.2,10.0,1.89
+,UPP,73.5,10.2,52.5,1.98
+,MAFFT,error
+,MAGUS,timeout
+,regressive T-Coffee,error
+PF07690,learnMSA,56.1,0.0,30.2,1.82
+,UPP,51.6,0.0,35.5,2.48
+,MAFFT,error
+,MAGUS,timeout
+,regressive T-Coffee,error
+PF00096,learnMSA,92.9,6.5,0.9,1.16
+,UPP,86.3,0.0,1.7,2.23
+,MAFFT,84.1,16.1,0.3,2.74
+,MAGUS,94.8,3.2,3.6,4.68
+,regressive T-Coffee,69.9,0.0,0.9,6.55
+PF00072,learnMSA,92.4,39.2,2.9,1.1
+,UPP,91.4,34.6,6.7,1.32
+,MAFFT,64.9,4.6,7.6,3.69
+,MAGUS,85.8,33.1,24.8,2.41
+,regressive T-Coffee,output too large
+PF00400,learnMSA,18.0,0.0,1.1,1.29
+,UPP,3.6,0.0,2.0,2.62
+,MAFFT,0.0,0.0,2.3,7.71
+,MAGUS,6.9,0.0,12.6,17.32
+,regressive T-Coffee,0.0,0.0,2.0,51.28
+PF00069,learnMSA,83.4,24.9,11.3,1.37
+,UPP,83.3,20.2,19.5,1.6
+,MAFFT,54.9,5.4,53.0,3.52
+,MAGUS,65.4,18.1,29.1,4.77
+,regressive T-Coffee,error
+PF12796,learnMSA,72.4,0.0,1.3,0.85
+,UPP,40.8,0.0,4.3,3.18
+,MAFFT,40.4,0.4,7.5,6.36
+,MAGUS,58.9,0.0,67.2,5.62
+,regressive T-Coffee,output too large
+PF13855,learnMSA,94.7,26.2,0.8,1.05
+,UPP,91.0,21.5,2.5,1.71
+,MAFFT,80.6,3.1,1.2,3.05
+,MAGUS,94.7,38.5,54.1,1.47
+,regressive T-Coffee,49.2,0.0,0.8,7.21
+PF00041,learnMSA,79.1,16.5,1.0,1.34
+,UPP,74.9,22.0,2.3,2.18
+,MAFFT,43.2,0.0,2.0,7.83
+,MAGUS,72.6,10.1,53.8,6.4
+,regressive T-Coffee,37.0,0.0,0.8,15.16
+PF07679,learnMSA,94.1,50.0,0.9,1.11
+,UPP,88.7,46.0,2.9,1.43
+,MAFFT,68.1,13.0,1.1,3.36
+,MAGUS,84.0,42.0,4.3,2.12
+,regressive T-Coffee,44.2,2.0,0.6,8.55
