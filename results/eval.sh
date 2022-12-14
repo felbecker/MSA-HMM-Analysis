@@ -2,8 +2,8 @@
 
 HOMFAM="../../data/homfam/refs/*.ref"
 BALIFAM100="../../data/balifam100/refs/*.ref"
-BALIFAM1000="../../data/balifam1000/refs/*.ref"
 BALIFAM10000="../../data/balifam10000/refs/*.ref"
+BALIFAMFRAG="../../data/balifrag/refs/*.ref"
 LARGE="../../data/large/refs/*.ref"
 
 cd $1
@@ -36,6 +36,6 @@ eval () {
 
 eval "$HOMFAM" "homfam" "$1"
 eval "$BALIFAM100" "balifam100" "$1"
-eval "$BALIFAM1000" "balifam1000" "$1"
 eval "$BALIFAM10000" "balifam10000" "$1"
-eval "$LARGE" "large" "$1"
+eval "$BALIFAMFRAG" "balifrag" "$1"
+#eval "$LARGE" "large" "$1"
