@@ -17,7 +17,7 @@ run () {
     do
 	filename=$(basename "$f")
 	if [ ! -f "${OUT_DIR}alignments/$filename" ]; then
-            { time python3 ../../../learnMSA/learnMSA.py -i "$f" -o "${OUT_DIR}alignments/$filename" -n 5 -d 0 > "${OUT_DIR}logs/${filename%.fasta}.log" ; } 2> "${OUT_DIR}times/${filename%.fasta}.time.txt"
+            { time python3 ../../../learnMSA/learnMSA.py -i "$f" -o "${OUT_DIR}alignments/$filename" -n 10 -d 0 > "${OUT_DIR}logs/${filename%.fasta}.log" ; } 2> "${OUT_DIR}times/${filename%.fasta}.time.txt"
     fi
     done
 }

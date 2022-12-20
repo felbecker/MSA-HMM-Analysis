@@ -7,7 +7,9 @@ BALIFAMFRAG="../../data/balifrag/refs/*.ref"
 LARGE="../../data/large/refs/*.ref"
 
 cd $1
-rm *.out
+#rm *.out
+
+export MAX_N_PID_4_TCOFFEE=434668
 
 eval () {
     for f in ${1}
@@ -34,8 +36,8 @@ eval () {
     done
 }
 
-eval "$HOMFAM" "homfam" "$1"
-eval "$BALIFAM100" "balifam100" "$1"
-eval "$BALIFAM10000" "balifam10000" "$1"
+#eval "$HOMFAM" "homfam" "$1"
+#eval "$BALIFAM100" "balifam100" "$1"
+#eval "$BALIFAM10000" "balifam10000" "$1"
 eval "$BALIFAMFRAG" "balifrag" "$1"
 #eval "$LARGE" "large" "$1"
