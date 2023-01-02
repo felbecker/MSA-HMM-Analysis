@@ -36,8 +36,8 @@ eval () {
     done
 }
 
-#eval "$HOMFAM" "homfam" "$1"
-#eval "$BALIFAM100" "balifam100" "$1"
-#eval "$BALIFAM10000" "balifam10000" "$1"
+eval "$HOMFAM" "homfam" "$1"
+eval "$BALIFAM100" "balifam100" "$1"
+eval "$BALIFAM10000" "balifam10000" "$1"
 eval "$BALIFAMFRAG" "balifrag" "$1"
-#eval "$LARGE" "large" "$1"
+eval "$LARGE" "large" "$1"
