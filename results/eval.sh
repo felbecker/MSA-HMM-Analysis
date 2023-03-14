@@ -20,15 +20,15 @@ eval () {
         id_list=$(sed -n '/^>/p' "$f" | sed 's/^.//')
         if [ ! -f "$projection" ]
         then
-            t_coffee -other_pg seq_reformat -in "$output_aln" -action +extract_seq_list "${id_list[@]}" +rm_gap > "$projection"
+            ~/bin/t_coffee -other_pg seq_reformat -in "$output_aln" -action +extract_seq_list "${id_list[@]}" +rm_gap > "$projection"
         fi
-        sp=$(t_coffee -other_pg aln_compare -al1 "$f" -al2 "$projection" -compare_mode sp \
+        sp=$(~/bin/t_coffee -other_pg aln_compare -al1 "$f" -al2 "$projection" -compare_mode sp \
                     | grep -v "seq1" | grep -v '*' | awk '{ print $4}')
-        modeler=$(t_coffee -other_pg aln_compare -al1 "$projection" -al2 "$f" -compare_mode sp \
+        modeler=$(~/bin/t_coffee -other_pg aln_compare -al1 "$projection" -al2 "$f" -compare_mode sp \
                                           | grep -v "seq1" | grep -v '*' | awk '{ print $4}')
-        tc=$(t_coffee -other_pg aln_compare -al1 "$f" -al2 "$projection" -compare_mode tc \
+        tc=$(~/bin/t_coffee -other_pg aln_compare -al1 "$f" -al2 "$projection" -compare_mode tc \
                     | grep -v "seq1" | grep -v '*' | awk '{ print $4}')
-        col=$(t_coffee -other_pg aln_compare -al1 "$f" -al2 "$projection" -compare_mode column \
+        col=$(~/bin/t_coffee -other_pg aln_compare -al1 "$f" -al2 "$projection" -compare_mode column \
                                           | grep -v "seq1" | grep -v '*' | awk '{ print $4}')
         time_file="times/${filename%.ref}.time.txt"
         time="$(grep real $time_file | sed -e "s/^real\t//")"
